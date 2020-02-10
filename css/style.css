@@ -101,8 +101,8 @@ a:hover, a:focus {
 
 @media screen and (max-width: 768px) {
   .probootstrap-header {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 
@@ -813,8 +813,8 @@ a:hover, a:focus {
 
 .img-bg .probootstrap-photo-details {
   text-align: left;
-  bottom: 20px;
-  left: 20px;
+  bottom: 50px;
+  left: 50px;
   position: absolute;
 }
 
