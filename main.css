@@ -56,9 +56,13 @@ ul {
     flex-direction: column;
 }
 
-.col-md-4, .col-md-3, .col-sm-12 {
+.col-md-3, .col-sm-12 {
     padding-left: 7px;
     padding-right: 7px;
+}
+
+.col-md-4 {
+    padding: 0px;
 }
 
 .photo-details {
@@ -76,6 +80,8 @@ ul {
     object-fit: fill;
     padding-top: 15px;
 }
+
+/*--- end photo tiles ---*/
 
 .centered {
     position: fixed;
@@ -97,4 +103,8 @@ ul {
     display: table-cell;
     vertical-align: top;
     padding: 2px;
+}
+
+.imagegrid {
+    padding: 0px;
 }
