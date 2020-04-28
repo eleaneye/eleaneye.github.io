@@ -2,42 +2,91 @@
 <html lang="en">
 
 <head>
-    <title>Eleane Ye Photography</title>
+    <title>Eleane Ye</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Inconsolata'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
 
+    <!-- START: header -->
     <nav class="navbar navbar-expand-md">
-        <a class="navbar-title" href="index.html">ELEANE YE</a>
-        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="main-navigation">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
+        <div class="container-fluid">
+            <a class="navbar-title" href="index.html">Eleane Ye</a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
+                data-target="#main-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-navigation">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <div class="bootstrap-section">
-        <div class="container-fluid">
-            <div class="row bootstrap-gutter16">
+        <div class="container">
+
+            <h2>Slideshow Indicators</h2>
+            <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide
+                the user is currently viewing.</p>
+
+            <div class="content display-container" style="max-width:800px">
+                <img class="mySlides" src="https://ik.imagekit.io/gem67khpb/33610007_b-VbkLSSy.JPG" style="width:100%">
+                <img class="mySlides" src="https://ik.imagekit.io/gem67khpb/33610013_Yi0ZYD90x.JPG" style="width:100%">
+                <img class="mySlides" src="https://ik.imagekit.io/gem67khpb/33610017_sC-tgJQ2f5.JPG" style="width:100%">
+                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function currentDiv(n) {
+                    showDivs(slideIndex = n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" w3-white", "");
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " w3-white";
+                }
+            </script>
+            <!-- <div class="row bootstrap-gutter16">
                 <div class="col-sm-12 col-md-4">
                     <img src="https://ik.imagekit.io/gem67khpb/33610007_b-VbkLSSy.JPG">
                 </div>
@@ -66,14 +115,14 @@
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <img src="https://ik.imagekit.io/gem67khpb/33610009_tnm5mivc1.JPG">
-                </div>
-            </div>
+                </div> -->
         </div>
+    </div>
 
 
 
-        <script src="jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
