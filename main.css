@@ -25,7 +25,7 @@ body {
     min-height: 100vh;
     position: relative;
     overflow: auto;
-    margin: 3vh 0 10px 0;
+    margin: 3vh 0 3px 0;
 }
 
 ul {
@@ -163,8 +163,8 @@ a:hover {
         -moz-column-count: 2;
         -webkit-column-count: 2;
         column-count: 2;
-        margin-left: 1vw;
-        margin-right: 1vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
     }
 }
 
@@ -180,6 +180,10 @@ a:hover {
 
 /*-- CONTACT --*/
 
+#contactme {
+    vertical-align: middle;
+}
+
 @media (min-width: 320px) {
     #contactme, #about {
         margin-left: 1vw;
@@ -189,8 +193,8 @@ a:hover {
 
 @media (min-width: 768px) {
     #contactme, #about {
-        margin-left: 1vw;
-        margin-right: 1vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
     }
 }
 
