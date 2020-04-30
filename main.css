@@ -109,7 +109,22 @@ a:hover {
     box-shadow: 0px 1px 10px #999;
 }
 
-/*-- BODY --*/
+/*-- ABOUT --*/
+
+.paragraph {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#download {
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: black; */
+    align-items: center;
+    text-align: center;
+}
+
+/*-- WORK--*/
 
 #imagegrid {
     line-height: 0;
@@ -133,13 +148,13 @@ a:hover {
     text-align: center;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 320px) {
     #imagegrid {
         -moz-column-count: 1;
         -webkit-column-count: 1;
         column-count: 1;
-        margin-left: 0.1vw;
-        margin-right: 0.1vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
     }
 }
 
@@ -148,18 +163,8 @@ a:hover {
         -moz-column-count: 2;
         -webkit-column-count: 2;
         column-count: 2;
-        margin-left: 2vw;
-        margin-right: 2vw;
-    }
-}
-
-@media (min-width: 992px) {
-    #imagegrid {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-        margin-left: 5vw;
-        margin-right: 5vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
     }
 }
 
@@ -175,23 +180,23 @@ a:hover {
 
 /*-- CONTACT --*/
 
-@media (min-width: 1200px) {
-    #contactme {
-        margin-left: 10vw;
-        margin-right: 10vw;
+@media (min-width: 320px) {
+    #contactme, #about {
+        margin-left: 1vw;
+        margin-right: 1vw;
     }
 }
 
 @media (min-width: 768px) {
-    #contactme {
-        margin-left: 7vw;
-        margin-right: 7vw;
+    #contactme, #about {
+        margin-left: 1vw;
+        margin-right: 1vw;
     }
 }
 
-@media (min-width: 400px) {
-    #contactme {
-        margin-left: 0.1vw;
-        margin-right: 0.1vw;
+@media (min-width: 1200px) {
+    #contactme, #about {
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
 }
