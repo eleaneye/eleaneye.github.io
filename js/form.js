@@ -1,3 +1,4 @@
+
 $(function () {
     function after_form_submitted(data) {
         if (data.result == 'success') {
