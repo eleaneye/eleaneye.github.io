@@ -1,7 +1,5 @@
 *, *:before, *:after {
     box-sizing: inherit;
-    padding: 0;
-    margin: 0;
     align-items: center;
 }
 
@@ -75,6 +73,11 @@ a:hover {
     color: teal;
 }
 
+.nav-item {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
 .nav-link {
     color: black;
     cursor: pointer;
@@ -83,7 +86,6 @@ a:hover {
     text-transform: uppercase;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    margin-left: 1.2rem;
 }
 
 .nav-link:hover:focus {
@@ -107,6 +109,10 @@ a:hover {
     width: 100vw;
     border-radius: 2px;
     box-shadow: 0px 1px 10px #999;
+}
+
+.dropdown-toggle:after {
+    content: none
 }
 
 .dropdown-menu a:hover {
