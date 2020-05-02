@@ -24,6 +24,7 @@ body {
     position: relative;
     overflow: auto;
     margin: 3vh 0 3px 0;
+    align-items: center;
 }
 
 ul {
