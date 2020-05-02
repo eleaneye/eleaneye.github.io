@@ -49,7 +49,7 @@ a:hover {
     text-decoration: none;
 }
 
-/*--- navigation bar ---*/
+/*--- NAV ---*/
 
 .hamburger {
     font-size: 200px;
@@ -107,6 +107,15 @@ a:hover {
     width: 100vw;
     border-radius: 2px;
     box-shadow: 0px 1px 10px #999;
+}
+
+.dropdown-menu a:hover {
+    background-color: #F8F9FA;
+}
+
+.dropdown-item.active {
+    background-color: #F8F9FA;
+    color: black;
 }
 
 /*-- ABOUT --*/
