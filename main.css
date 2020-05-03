@@ -20,10 +20,10 @@ body {
 }
 
 .wrapper {
-    min-height: 100vh;
+    min-height: 80vh;
     position: relative;
     overflow: auto;
-    margin: 3vh 0 3px 0;
+    margin: 3vh 0 0 0;
     align-items: center;
 }
 
@@ -64,10 +64,13 @@ a:hover {
 
 .navbar-brand {
     color: black;
+    /* background-color: black; */
     cursor: pointer;
     font-size: 1.5rem;
     font-family: "Inconsolata", monospace;
     font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .navbar-brand:hover {
@@ -209,21 +212,21 @@ a:hover {
 }
 
 @media (min-width: 320px) {
-    #contactme, #about {
+    footer, #home, #contactme, #about {
         margin-left: 1vw;
         margin-right: 1vw;
     }
 }
 
 @media (min-width: 768px) {
-    #contactme, #about {
+    footer, #home, #contactme, #about {
         margin-left: 2vw;
         margin-right: 2vw;
     }
 }
 
 @media (min-width: 1200px) {
-    #contactme, #about {
+    footer #home, #contactme, #about {
         margin-left: 10vw;
         margin-right: 10vw;
     }
