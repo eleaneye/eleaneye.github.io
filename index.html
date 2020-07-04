@@ -13,6 +13,11 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="img/site.webmanifest">
+
 	<script src='js/jquery-3.5.0.min.js'></script>
 	<script src="js/script.js"></script>
 </head>
@@ -23,7 +28,7 @@
 		<div class="container-fluid">
 			<a class="navbar-brand active" href="index.html">Eleane Ye</a>
 			<button class="navbar-toggler navbar-light" type="button" data-toggle="collapse"
-				data-target="#main-navigation">
+				data-target="#main-navigation" onclick="toggle_visibility('tagline');">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="main-navigation">
@@ -31,20 +36,8 @@
 					<li class="nav-item">
 						<a class="active nav-link" href="index.html">Home</a>
 					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-							aria-haspopup="true" aria-expanded="false">
-							Work
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<li>
-								<a class="dropdown-item" href="photos.html">Photos</a>
-							</li>
-							<!-- <li>
-                                <a class="dropdown-item" href="journal.html">Journal</a>
-                            </li> -->
-						</ul>
-						<!-- <a class="active nav-link" href="work.html">Work</a> -->
+					<li class="nav-item">
+						<a class="nav-link" href="photos.html">Work</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="about.html">About</a>
@@ -53,11 +46,11 @@
 						<a class="nav-link" href="contact.html">Contact</a>
 					</li>
 				</ul>
+
 			</div>
 		</div>
 	</nav>
 	<!-- END: header -->
-
 
 	<div class="wrapper" id="home">
 		<div class="container-fluid">

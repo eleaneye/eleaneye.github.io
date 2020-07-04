@@ -2,8 +2,16 @@
 
 $(window).scroll(function () {
     if ($(window).scrollTop() > 10) {
-        $('#navBar').addClass('floatingNav');
+        $('#secondNav').addClass('floatingNav');
     } else {
-        $('#navBar').removeClass('floatingNav');
+        $('#secondNav').removeClass('floatingNav');
     }
 });
+
+function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if (e.style.display == 'block')
+        e.style.display = 'none';
+    else
+        e.style.display = 'block';
+}
