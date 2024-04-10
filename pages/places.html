@@ -5,13 +5,14 @@
     <title>Eleane Ye</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Inconsolata'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -23,11 +24,10 @@
 </head>
 
 <body>
-
     <!-- START: header -->
     <nav class="navbar navbar-expand-md px-4" id="navBar">
         <div class="container-fluid">
-            <a class="navbar-brand active" href="index.html">Eleane Ye &#127818;</a>
+            <a class="navbar-brand" href="../index.html">Eleane Ye &#127818;</a>
             <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse"
                 data-target="#main-navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,16 +35,16 @@
             <div class="collapse navbar-collapse" id="main-navigation">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="photos.html">Work</a>
+                        <a class="active nav-link" href="../photos.html">Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="active nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="../about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="../contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -52,35 +52,34 @@
     </nav>
     <!-- END: header -->
 
-    <div class="wrapper" id="about">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <img class="img-fluid" src="https://ik.imagekit.io/gem67khpb/itme_2xYxDCnsT.jpg">
-                </div>
-                <div class="col-md-6">
-                    <p class="paragraph">
-                        Photographer: Mostly digital and sometimes film &#128248;
-                        <br>
-                        Portraits / Events / Food / Travel
-                        <br>
-                        &#128205; New York City + Seattle
-                        <br>
-                        Website is still a work in progress, thanks for visiting!
-                        <br>
-                        <br>
-                        <!-- <a id="download" href="img/Eleane Ye_Resume.pdf" target="_blank" download="Eleane Ye Resume">
-                            <button><i class="fas fa-download"></i> Download Resume</button>
-                        </a> -->
-                        <a id="download" href="mailto:eleaneye@live.com" target="_blank">
-                            <button><i class="fas fa-envelope"></i> Get in touch</button>
-                        </a>
-                    </p>
 
-                </div>
-            </div>
+    <section class="wrapper" id="imagegrid">
+        <div>
+            <img class="img"
+                src="https://ik.imagekit.io/yeleane/travel/2016-08-12_11-53-08_000.jpeg?updatedAt=1712633478885"
+                data-aos="fade-in" data-aos-duration="1000">
         </div>
-    </div>
+        <div>
+            <img class="img"
+                src="https://ik.imagekit.io/yeleane/travel/IMG_1702.jpg?updatedAt=1712633212244"
+                data-aos="fade-in" data-aos-duration="1000">
+        </div>
+        <div>
+            <img class="img"
+                src="https://ik.imagekit.io/yeleane/travel/33c43c98-f588-4097-9cbf-f306dd924837.jpeg?updatedAt=1712633446524"
+                data-aos="fade-in" data-aos-duration="1000">
+        </div>
+        <div>
+            <img class="img"
+                src="https://ik.imagekit.io/yeleane/travel/2018-10-07_10-39-03_988.jpeg?updatedAt=1712633447171"
+                data-aos="fade-in" data-aos-duration="1000">
+        </div>
+        <div>
+            <img class="img"
+                src="https://ik.imagekit.io/yeleane/travel/2018-10-07_10-13-33_810%20(2020-01-02T08_21_18.133).jpeg?updatedAt=1712633446619"
+                data-aos="fade-in" data-aos-duration="1000">
+        </div>
+    </section>
 
     <!-- START: footer -->
     <footer class="footer">
@@ -106,6 +105,11 @@
     </footer>
     <!-- END: footer -->
 
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
